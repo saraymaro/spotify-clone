@@ -41,3 +41,26 @@ a{
     justify-content: center;
     align-items: center;
 }
+h2{
+    text-decoration: underline;
+    text-decoration-color: #00B172;
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    width: 100%;
+    height: 300px;
+}
+.box{
+    background-color: #00B172;/*quitar*/
+    width: 32.8%;
+    height: 200px;
+    display: inline-block;
+}
+h3{
+    color: #00B172;
+    font-weight: bold;
+}
+.box img{
+    width: 80px;
+}
