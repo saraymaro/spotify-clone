@@ -1,66 +1,198 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-body{
-    margin: 0%;
+body {
+  margin: 0%;
 }
-header{
-    background-color: #FFF;
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed; 
+/*section1*/
+header {
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
 }
-ul, li{
-    display: flex;
-    justify-content: flex-end;
-    margin: 4px;
-    margin-right: 15px;
+a {
+  color: black;
+  text-decoration: none;
 }
-a{
-    color: black;
-    text-decoration: none;
+.fondo {
+  width: 100%;
+  height: 100%;
 }
-.fondo{
-    width: 100%;
-    height: 100%;
+.text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
 }
-.text{
-    position: absolute;
-    text-align: center;
-    color: #FFF;
-}
-.section1{
+.section1 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+/*section2*/
+.section2 {
+  width: 100%;
+  height: auto;
 }
-h2{
-    text-decoration: underline;
-    text-decoration-color: #00B172;
+.section2 h2 {
+  text-decoration: underline;
+  text-decoration-color: #00b172;
+  display: flex;
+  justify-content: center;
+}
+.boxes {
+  width: 100%;
+  height: auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2 h3 {
+  color: #00b172;
+  font-weight: bold;
+}
+.box p {
+  margin: 0px;
+}
+.box img {
+    width: 70px;
+    height: 70px;
+}
+/*section3*/
+.section3 {
+  background-color: #00b172;
+  width: 98%;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+  align-items: center;
+}
+.textgreen h2 {
+  text-decoration: underline;
+}
+/*pantallas mas grandes de 768 (PC's)*/
+@media (width > 768px) {
+  /*section1*/
+  ul,
+  li {
     display: flex;
-    justify-content: center;
-}
-.boxes{
-    width: 100%;
-    height: 300px;
-}
-.box{
-    background-color: #00B172;/*quitar*/
+    margin: 4px;
+    margin-right: 15px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /*section2*/
+  .boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .box {
     width: 32.8%;
     height: 200px;
     display: inline-block;
-}
-h3{
-    color: #00B172;
-    font-weight: bold;
-}
-.box img{
+  }
+  /*section3*/
+  .section3 {
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .spotify {
     width: 80px;
+    height: 80px;
+  }
+  .kanye {
+    width: 250px;
+    height: 400px;
+  }
 }
+/*Tablets mas grandes de 320 y mas pequeñas de 768*/
+@media (width > 320px) and (width < 768px) {
+  /*section1*/
+  ul,
+  li {
+    display: flex;
+    margin: 4px;
+    margin-right: 15px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /*section2*/
+  .boxes {
+    text-align: center;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00b172;
+    border-radius: 10px;
+    margin: 2px;
+  }
+
+  /*section3*/
+  .section3 {
+    height: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .spotify {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .kanye {
+    width: 250px;
+    height: 400px;
+  }
+}
+/*moviles mas pequeños de 320*/
+@media (width < 320px){
+ul, li {
+    display: flex;
+    margin: 4px;
+    margin-right: 15px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .text h1{
+    font-size: 20px;
+  }
+  .text p{
+    font-size: 12px;
+  }
+  /*section2*/
+  .boxes {
+    text-align: center;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00b172;
+    border-radius: 10px;
+    margin: 2px;
+  }
+  /*section3*/
+  .section3 {
+    height: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .spotify {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .kanye {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+
